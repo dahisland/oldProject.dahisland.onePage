@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Dahisland - Infographiste webdesigner</title>
+
+    <meta
+      name="description"
+      content="Dahisland - Digital Designer. Illustration 3D : Modélisation, Texturing, Lighting - Animation 3D - Post-production audiovisuelle, montage numérique"
+    />
+    <meta
+      name="keywords"
+      content="graphiste, graphic, infographiste, infographie, 3D, web, webdesign, montage, post-production, animation, maya, 3ds max, after effect, adobe première, multimédia, intermittent, modelisation, motion design, digital designer, modeler, dreamweaver, photoshop,"
+    />
+    <meta name="author" content="Dahisland" />
+    <meta name="revisit-after" content="15 days" />
+    <meta name="robots" content="ALL" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/supersized.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="rsc/img/favicon.png" />
+    <!-- VGalerie Lightbox liens CSS -->
+    <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css" />
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9
+      ]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script
+    ><![endif]-->
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script
+      src="js/jquery-animate-css-rotate-scale.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/supersized.js" type="text/javascript"></script>
+    <script src="js/site.js" type="text/javascript"></script>
+
+    <script
+      type="text/javascript"
+      src="lightbox/js/lightbox-2.6.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div
+      id="site"
+      style="
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      "
+    >
+      <!-- Image permettant d'opacifier le fond lors (pour formulaire, lecteur video et galerie image) -->
+      <div id="opacite"></div>
+
+      <!-- Feuillage de gauche -->
+      <div id="feuille02">
+        <img src="rsc/img/feuilles/Feuille02.png" alt="feuille verte 2" />
+      </div>
+      <div id="feuille03">
+        <img src="rsc/img/feuilles/Feuille03.png" alt="feuille verte 3" />
+      </div>
+      <div id="courbe">
+        <img src="rsc/img/feuilles/feuillecourbe.png" alt="feuille courbe 1" />
+      </div>
+
+      <!-- Feuillage de droite -->
+      <div id="feuille05">
+        <img src="rsc/img/feuilles/feuille05.png" alt="feuille verte 5" />
+      </div>
+      <div id="courbe02">
+        <img src="rsc/img/feuilles/courbe02.png" alt="feuille courbe 2" />
+      </div>
+
+      <!-------------------->
+      <!-- BARRE CENTRALE-->
+      <!-------------------->
+      <div id="sidebar">
+        <!-- Bannière logo -->
+        <header>
+          <h1 title="Bienvenue sur l'île Dahisland">
+            <img
+              src="rsc/img/bannierepourleweb.jpg"
+              alt="logo Dahisland"
+              id="logodah"
+              usemap="#Map"
+            />
+            <map name="Map">
+              <area
+                shape="rect"
+                coords="10,100,180,285"
+                href="index.html"
+                alt="Réactualiser"
+              />
+            </map>
+          </h1>
+        </header>
+
+        <!-- Menu -->
+        <nav>
+          <a href="#sectionpict" id="picture">
+            <img src="rsc/img/menupictures.png" alt="Click to see pictures" />
+          </a>
+          <a href="#sectionpict" id="picture2">
+            <img src="rsc/img/menupictures2.png" alt="Click to see pictures" />
+          </a>
+          <a href="#sectionnews" id="diary">
+            <img src="rsc/img/menudiary.png" alt="Click to see the news" />
+          </a>
+          <a href="#sectionnews" id="diary2">
+            <img src="rsc/img/menudiary.png" alt="Click to see the news" />
+          </a>
+          <a href="#sectionvideo" id="motion">
+            <img src="rsc/img/menumotion.png" alt="clik to see videos" />
+          </a>
+          <a href="#sectionvideo" id="motion2">
+            <img src="rsc/img/menumotion2.png" alt="clik to see videos" />
+          </a>
+          <a href="#sectiontools" id="tools">
+            <img src="rsc/img/menutools.png" alt="Click to see competences" />
+          </a>
+          <a href="#sectiontools" id="tools2">
+            <img src="rsc/img/menutools.png" alt="Click to see competences" />
+          </a>
+        </nav>
+
+        <!-- Réseaux sociaux et mail -->
+        <address id="contact">
+          <img
+            src="rsc/img/moreexplo.png"
+            id="morexplo"
+            alt="More exploration ?"
+          />
+          <a
+            href="https://www.behance.net/creabylone"
+            target="_blank"
+            id="twitter"
+            title="Follow me on Behance"
+          ></a>
+          <a
+            href="mailto:dahisland@gmail.com"
+            target="_blank"
+            id="mailto"
+            title="Contact Dahisland by Email"
+            >dahisland@gmail.com</a
+          >
+          <a
+            href="https://vimeo.com/dahisland/videos"
+            title="Follow me on Vimeo"
+            target="_blank"
+            id="viadeo"
+          ></a>
+        </address>
+
+        <!-- Formulaire -->
+        <div id="message">
+          <a href="#" title="Racontez votre aventure à Dahisland" id="msgbottle"
+            ><img src="rsc/img/bottle.png" alt="Message in a bottle"
+          /></a>
+          <div id="sectionbottle">
+            <h2 id="intitule">
+              Partagez votre aventure en lançant une bouteille à la mer
+            </h2>
+
+            <form method="post" action="#">
+              <label for="letname" id="letname">Votre nom :</label>
+              <input type="text" id="letname" name="letname" />
+              <label for="givemail" id="givemail">Votre Email:</label>
+              <input type="email" id="givemail" name="givemail" />
+              <label for="comment" id="comment"
+                >Faites le récit de votre aventure :</label
+              >
+              <textarea id="comment" name="comment"></textarea>
+
+              <div id="loading"><img src="rsc/img/load.gif" alt="load" /></div>
+
+              <input type="submit" id="submit" name="submit" value="Lancer" />
+            </form>
+            <p><a href="index.html" id="back">Retour Accueil</a></p>
+          </div>
+        </div>
+
+        <!--Liens vers sites -->
+        <div id="links">
+          <a href="#" id="explorer"
+            ><img src="rsc/img/explorers.png" alt="Explorers of Dahisland"
+          /></a>
+
+          <div id="explo">
+            <ul>
+              <li>
+                <a href="http://alexischenot.com/" target="_blank" id="alexis"
+                  >Alexis Chenot</a
+                >
+              </li>
+              <li>
+                <a href="http://www.dk3d.fr/" target="_blank" id="dk3d">DK3D</a>
+              </li>
+              <li>
+                <a href="http://marie.dk3d.fr/" target="_blank" id="mdk"
+                  >MDK - Plasticienne</a
+                >
+              </li>
+              <li>
+                <a href="http://www.dckfilms.fr/" target="_blank" id="filmdck"
+                  >DCK Films</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://association-incite.fr/"
+                  target="_blank"
+                  id="david"
+                  >Association Incite</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/assogarealart34"
+                  target="_blank"
+                  id="gare"
+                  >Gare à l'art 34</a
+                >
+              </li>
+              <li>
+                <a href="http://www.pegy.fr" target="_blank" id="pegy">PeGy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <footer id="copyright">
+          <img src="rsc/img/copyright.png" alt="copyright" />
+          <p id="kevin">MUSIC :</p>
+          <p>
+            Frost Waltz Kevin MacLeod<br /><a
+              href="http://incompetech.com/music/royalty-free/"
+              >incompetech.com</a
+            >
+          </p>
+        </footer>
+      </div>
+
+      <!--------------------->
+      <!-- CONTENU DU MENU -->
+      <!--------------------->
+
+      <!-- Galerie photo Lightbox -->
+      <section id="gallery">
+        <ul id="images">
+          <!--Feuille "New" -->
+          <li>
+            <a
+              href="rsc/img/photos/Casa.jpg"
+              title="Casa Sénégalaise - 3DS Max 2014"
+              data-lightbox="gallery3d"
+              id="parfum"
+              ><img
+                src="rsc/img/minifeuilles/newparfum.png"
+                width="291"
+                height="266"
+                alt=""
+            /></a>
+          </li>
+          <!--Suite de la galerie -->
+          <li>
+            <a
+              href="rsc/img/photos/Saloncasa.jpg"
+              title="Salon de la Casa Sénégalaise - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Cuisinecasa.jpg"
+              title="Cuisine de la Casa Sénégalaise - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Cuisine.jpg"
+              title="Cuisine design Pure - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/mrjack.jpg"
+              title="N'affreux Nowel à tous ! - 3DS Max 2014"
+              data-lightbox="gallery3d"
+              id="mrjack"
+              ><img
+                src="rsc/img/minifeuilles/minijack.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Lego.jpg"
+              title="Lego Michel Angelo - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Japonais.jpg"
+              title="Salon design ethnique - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="japon"
+              ><img
+                src="rsc/img/minifeuilles/minijap.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Plongeon.jpg"
+              title="Le grand plongeon - 3DS Max 2011 "
+              data-lightbox="gallery3d"
+              id="plonge"
+              ><img
+                src="rsc/img/minifeuilles/miniplongeon.png"
+                width="100"
+                height="87"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Manoir.jpg"
+              title="Manoir inspiré du jeu Resident Evil - Maya 2011"
+              data-lightbox="gallery3d"
+              id="manoir"
+              ><img
+                src="rsc/img/minifeuilles/minimanoir.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/monopolice.jpg"
+              title="Monopolice - Maya 2011"
+              data-lightbox="gallery3d"
+              id="monopolice"
+              ><img
+                src="rsc/img/minifeuilles/minimonopolice.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Cassbrin.jpg"
+              title="Un Cassebrin pour le 1er mai ! - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Hein.jpg"
+              title="Simplement Heineken - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="heineke"
+              ><img
+                src="rsc/img/minifeuilles/minihein.png"
+                width="100"
+                height="87"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Heinparty.jpg"
+              title="Heineken Party ! Yehaaa ! - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Toy.jpg"
+              title="Lucky-toy story - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="story"
+              ><img
+                src="rsc/img/minifeuilles/minitoy.png"
+                width="100"
+                height="87"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Buzz.jpg"
+              title="Vers l'infini et au delà !! - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Soleil.jpg"
+              title="Coucher de soleil sur la mer - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="soleil"
+              ><img
+                src="rsc/img/minifeuilles/minibateau.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Voyance.jpg"
+              title="Table de l'Oracle - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="voyant"
+              ><img
+                src="rsc/img/minifeuilles/minivoyance.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Dague.jpg"
+              title="Dague inspirée de Prince of Persia - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="dague"
+              ><img
+                src="rsc/img/minifeuilles/minidague.png"
+                width="100"
+                height="87"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Roue.jpg"
+              title="Grande roue sur Place estivale - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Maquette.jpg"
+              title="Maquette 3D pour spectacle médiéval fantastique- 3DS Max 2011 "
+              data-lightbox="gallery3d"
+              id="maquette"
+              ><img
+                src="rsc/img/minifeuilles/minimaquette.png"
+                width="100"
+                height="87"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Medfan.jpg"
+              title="Scénographie 3D d'un spectacle médiéval fantastique - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="amazone"
+              ><img
+                src="rsc/img/minifeuilles/miniamazone.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Medfan02.jpg"
+              title="Scénographie 3D d'un spectacle médiéval fantastique - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="roi"
+              ><img
+                src="rsc/img/minifeuilles/miniroi.png"
+                width="100"
+                height="87"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Danseuse.jpg"
+              title="Danseuse du spectacle Médiéval fantastique - 3DS Max 2011"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Villacote.jpg"
+              title="Villa Vacances - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Villaterrasse.jpg"
+              title="Villa Vacances Terrasse - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Villachambre.jpg"
+              title="Villa Vacances Chambre - 3DS Max 2014"
+              data-lightbox="gallery3d"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="rsc/img/photos/Nature.jpg"
+              title="Nature morte - 3DS Max 2011"
+              data-lightbox="gallery3d"
+              id="nature"
+              ><img
+                src="rsc/img/minifeuilles/minifruit.png"
+                width="150"
+                height="164"
+                alt=""
+            /></a>
+          </li>
+          <!--Pour les images vides -->
+          <li>
+            <img
+              src="rsc/img/minifeuilles/feuille.png"
+              width="100"
+              height="87"
+              alt=""
+              id="coming01"
+              class="off"
+            />
+          </li>
+          <li>
+            <img
+              src="rsc/img/minifeuilles/feuille.png"
+              width="100"
+              height="87"
+              alt=""
+              id="coming02"
+              class="off"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <!-- Lecteur vidéos -->
+      <section id="youtube">
+        <iframe
+          id="lecteuryt01"
+          class="lecteursyt"
+          width="0"
+          height="315"
+          src="https://www.youtube.com/embed/wiscbAIzgKY?enablejsapi=1&origin=http://dahisland.rymmia.com"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer"
+          autoplay="1 clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          id="lecteuryt02"
+          class="lecteursyt"
+          src="https://player.vimeo.com/video/39083345?h=4b08540485&portrait=0"
+          width="0"
+          height="315"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          id="lecteuryt03"
+          class="lecteursyt"
+          width="0"
+          height="315"
+          src="https://www.youtube.com/embed/CyF4A_aqkwg?enablejsapi=1&origin=http://dahisland.rymmia.com"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer"
+          autoplay="1 clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <h3 id="titrevideo01" class="titresvideos">
+          A LA UNE : Objectif formation ? Je plaide coupable !
+        </h3>
+        <h3 id="titrevideo02" class="titresvideos">
+          L'ENVIE PRESSANTE : Mon 1er court-métrage d'animation 3D
+        </h3>
+        <h3 id="titrevideo03" class="titresvideos">
+          GRAF N'MOTION : Les émotions en mouvement
+        </h3>
+
+        <ul id="minivideos">
+          <li><a href="#" id="minivideo01" class="minivid"></a></li>
+          <li><a href="#" id="minivideo02" class="minivid"></a></li>
+          <li><a href="#" id="minivideo03" class="minivid"></a></li>
+        </ul>
+      </section>
+
+      <!-- Journal -->
+      <section id="pourjournal">
+        <div id="journal">
+          <img src="rsc/img/bonzai.png" alt="bonzai" id="bonzai" />
+          <a href="#" id="bouquet01"></a>
+          <a href="#" id="bouquet02"></a>
+          <a href="#" id="bouquet03"></a>
+          <a href="#" id="bouquet04"></a>
+          <a href="#" id="amazones" title="Qui est donc la naufragée"></a>
+          <a href="#" id="griffures" title="Quoi de neuf à Dahisland"></a>
+          <a href="#" id="haut" title="Faire pousser l'arbre"></a>
+          <a href="#" id="droite" title="Faire revenir l'arbre"></a>
+
+          <div id="news">
+            <h2>Jour 2458 : Dahisland renait de ses cendres</h2>
+            <p>
+              L'île avait été abandonnée. La naufragée avait trouvé refuge sur
+              d'autres terres...
+            </p>
+            <p>
+              Mais, toujours autant passionnée, elle n'a jamais cessé d'animer
+              et de développer avec sa trousse à outils.
+            </p>
+            <p>
+              Alors, pourquoi ne pas professionnaliser tout ça ? Aquérir une
+              nouvelle trousse de secours et quitter enfin les terres de la
+              survie pour venir en aide à ceux qui n'en possèdent pas, tel est
+              mon objectif ! Pour l'occasion, j'ai rénové cette île... et comme
+              elle m'avait manqué ! J'ai hâte de conquérir de nouvelles
+              terres...
+            </p>
+
+            <h2>Jour 11 : De la nouveauté et du changement !!</h2>
+            <p>
+              Le temps passe à Dahisland, et l'habitante n'a pas chômé... De
+              longues semaines ont passé, et de nouvelles images apparaissent et
+              viennent agrémenter le décor de l'île !
+            </p>
+            <p>
+              Mais ce n'est pas tout ! L'île Dahisland a désormais une 2ème
+              terre ! Moins dense, elle permet aux naufragés peu friands
+              d'aventures, de s'acclimater plus aisément à la faune et la flore
+              de l'île.
+            </p>
+            <p>
+              Retrouvez les nouvelles illus dans la rubrique "Dahisland en
+              images" et rendez-vous sur
+              <a
+                href="http://www.dahis.rymmia.com"
+                title="Site Dahisland"
+                target="_blank"
+                id="sitedah"
+                >dahis.rymmia.com</a
+              >
+              pour tenter l'aventure sans risques !
+            </p>
+
+            <h2>Jour 10 : Vers l'infini et au-delà</h2>
+            <p>
+              Le célèbre personnage de Toy Story : Buzz l'éclair, s'est invité à
+              Dahisland !
+            </p>
+            <p>
+              50 petites secondes, mais un long travail très complet de
+              plusieurs semaines pour donner naissance à ce petit Buzz ! De la
+              modélisation à l'animation, en passant par toutes les phases
+              intermédiaires, toutes les étapes clés liées au secteur de
+              l'animation 3D ont été réalisées par votre naufragée sur 3DS Max
+              2014.
+            </p>
+            <p>
+              Retrouvez la vidéo d'animation "Vers l'infini et au-delà" dans la
+              rubrique "Dahisland en vidéo".
+            </p>
+
+            <h2>Jour 9 : Les senteurs de l'Ôcéan</h2>
+            <p>
+              A la douce lueur du reflet du soleil sur la mer, j'inspire et sens
+              le doux parfum de l'eau.
+            </p>
+            <p>
+              La toute première illustration de 2014 a été réalisé en 3D, en
+              utilisant un moteur de rendu tout nouveau pour Dahisland : V-ray.
+              Ce moteur de rendu, c'est la possibilité décuplée de réaliser des
+              images aux lumières impressionnantes de photoréalisme. Pour votre
+              publicité, votre projet d'architecture, ou
+            </p>
+            <p>
+              Retrouvez l'illustration "Une goutte d'Ô dans l'océan" dans la
+              rubrique "Dahisland en images".
+            </p>
+
+            <h2>Jour 8 : 2014 en musique !</h2>
+            <p>Et voilà... L'année 2013 nous quitte...</p>
+            <p>
+              Mais 2014 arrive en fanfare !!! Dahisland s'initie à la création
+              musicale et vous souhaite une bonne année 2014 sur un extrait de
+              sa propre composition !
+            </p>
+            <p>
+              Créé à l'aide du logiciel MuLab, le 1er morceau "voyage ethnique"
+              ouvre la porte sur une toute nouvelle possibilité de vous
+              satisfaire : Désormais, Dahisland peut vous proposer d'accompagner
+              les animations que vous lui commanderez avec une musique
+              totalement inédite... Le début d'un nouveau voyage...
+            </p>
+            <p>
+              Retrouvez la vidéo "Bonne année 2014" dans la rubrique "Dahisland
+              en vidéo".
+            </p>
+
+            <h2>Jour 7 : Le père Noêl fait escale sur l'île</h2>
+            <p>
+              Les fêtes de fin d'années approchent et un mystérieux bonhomme
+              déguisé en père Noël s'est invité à Dahisland... Méfiance... Le
+              contenu de son cadeau ne semble pas très avenant...
+            </p>
+            <p>
+              Pour ce Noël 2013, c'est le célèbre Mr Jack qui s'est invité au
+              réveillon... Modélisé sur 3Ds Max 2014, voici donc une petite
+              image pour vous souhaiter à tous un "N'affreux Nowel" !
+            </p>
+            <p>
+              Retrouvez l'illustration "N'affreux Nowel !" dans la rubrique
+              "Dahisland en images".
+            </p>
+
+            <h2>Jour 6 : Terre en vue !</h2>
+            <p>
+              Après de longs efforts à survivre sur son radeau, la naufragée
+              aperçoit enfin la silhouette de son île !
+            </p>
+            <p>
+              Mystérieuse et envoûtante, cette terre d'aventure semble regorger
+              de ressources et de merveilles. Plus que quelques coups de rames
+              et elle pose enfin les pieds sur le sable chaud de l'île de ses
+              rêves.
+            </p>
+            <p>
+              Entièrement créé de ses mains, Dahisland est un site moderne en
+              HTML5, CSS3 et intégration de Javascript, le tout conforme aux
+              normes W3C. Tous les éléments graphiques ont été façonnés par la
+              naufragée, qui a dû mettre à profit l'intégralité de sa trousse de
+              survie pour y arriver.
+            </p>
+            <p>
+              Soyez nombreux à explorer l'île et faites appel à elle pour vos
+              tous vos projets webs, graphiques ou vidéo. Les ressources de
+              l'île et son autonomie lui permettent de s'adapter à de nombreux
+              secteurs d'activité : communication, agence web, audiovisuel,
+              architecture, jeu vidéos, publicité...
+            </p>
+            <p>
+              Bienvenue à l'île Dahisland, qui regorge de trésors, et augure de
+              belles aventures à venir.
+            </p>
+
+            <h2>Jour 5 : Festivités</h2>
+            <p>
+              La naufragée décide de modéliser et animer en 3D une petite vidéo
+              pour l'événement du 14 juillet. Elle fait alors éclater les feux
+              d'artifices, tout en y glissant une pointe d'humour.
+            </p>
+            <p>
+              Sur une musique célèbre de Richard Strauss, même sur son radeau,
+              la naufragée rend hommage à cette page de l'Histoire.
+            </p>
+
+            <h2>Jour 4 : Magie céleste</h2>
+            <p>
+              Au cours d'une magnifique nuit étoilée, la naufragée fait la
+              rencontre d'un membre de l'association Gare à l'Art 34. Il lui
+              fait part de son projet de monter un spectacle médiéval
+              fantastique mêlant combats équestres, théâtre, valses de lumières
+              et effets pyrotechniques.
+            </p>
+            <p>
+              Afin que ce projet voie le jour, la naufragée réalise 3
+              scénographies 3D pour illustrer l'événement. L'association a pu
+              ainsi visualiser son projet lors de sa présentation au maire de sa
+              ville.
+            </p>
+
+            <h2>Jour 3 : "Incidences" heureuses</h2>
+            <p>3 petites lettres d'un logo 2D s'ennuient...</p>
+            <p>
+              La société de production audiovisuelle DCK Films fait appel à la
+              naufragée pour les animer. Elle modélise alors en 3D ces 3 petites
+              lettres et les font danser avec simplicité et élégance, afin de
+              respecter l'image de l'agence, qui lui offre toute sa confiance.
+            </p>
+            <p>
+              L'animation sera diffusée lors de la projection au Festival de
+              Cannes du court-métrage "Incidences" réalisé par David Hadjadj,
+              lauréat du concours Banlieuzart 2012.
+            </p>
+
+            <h2>Jour 2 : Soleil et encouragements</h2>
+            <p>La naufragée trouve sur sa route de quoi l'encourager !</p>
+            <p>
+              L'école des Gobelins retient son dossier pour son concours
+              d'animateur 3D. Bien que cela n'ait finalement pas pu aboutir,
+              elle sait désormais que ses outils peuvent lui permettre de
+              survivre, et même mieux, de construire du rêve...
+            </p>
+
+            <h2>Jour 1 : Sur le radeau</h2>
+            <p>
+              Sur le radeau, à la recherche d'une île, la naufragée a déjà
+              récupéré la trousse de secours nécessaire à sa survie.
+            </p>
+            <p>
+              C'est en possession d'un Titre multimédia et d'une certification
+              3D qu'elle navigue en direction d'une terre d'accueil sur laquelle
+              elle pourra utiliser ses outils et bâtir à souhaits des sites
+              internets en folie et des contenus animés en 2D, en 3D...
+            </p>
+          </div>
+
+          <div id="presentation">
+            <h2>Dahisland et sa naufragée</h2>
+            <p>
+              Bien qu'elle soit vaste, l'île Dahisland n'abrite en réalité
+              qu'une seule naufragée.
+            </p>
+            <p>
+              Fascinée par les mondes qui s'animent, l'habitante de l'île aime
+              créer, construire et habiller les mots et les images. Que cela
+              passe par le webdesign, l'animation 2D/3D, le montage,
+              l'infographie ou encore la musique, elle utilise ses outils pour
+              concevoir des univers de toutes sortes, du plus simple au plus
+              élaboré, en s'adaptant aux désirs et besoins de ceux qui lui font
+              confiance.
+            </p>
+            <p>
+              Autodidacte et polyvalente, elle n'a cependant pas hésité à
+              remettre en question ses compétences, et aujourd'hui, elle a
+              sélectionné les structures les plus prometteuses et adaptées pour
+              professionnaliser ses acquis afin de proposer le meilleur
+              d'elle-même à ses futurs collaborateurs.
+            </p>
+            <p>
+              Passionnée mais un peu trop exigente envers elle-même, elle a
+              désormais pour objectif de concilier toutes ses activités dans un
+              même métier, un métier où l'ennui ne frappe jamais à la porte et
+              où ses différentes expériences prendront leur sens.
+            </p>
+            <p>C'est parti pour de nouvelles aventures !</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carte aux trésors pour Kit de survie -->
+      <section id="tresoors">
+        <div id="carteotresor">
+          <a href="#" id="dsmaxor" class="opa"></a>
+          <a href="#" id="dreamor" class="opa"></a>
+          <a href="#" id="afteror" class="opa"></a>
+          <a href="#" id="encoror" class="opa"></a>
+          <a href="#" id="mayaor" class="opa"></a>
+          <a href="#" id="premieror" class="opa"></a>
+          <a href="#" id="giantor" class="opa"></a>
+          <a href="#" id="toshopor" class="opa"></a>
+
+          <p id="max">
+            Autodesk 3DS Max - <br /><br />Un outil de référence dans la 3D. Il
+            permet de réaliser des illustrations et animations 3D de qualité et
+            ultra réalistes.<br />Grâce au moteur de rendu Mental Ray, les
+            lumières et les textures des scénographies rendront votre séjour à
+            Dahisland paradisiaque.
+          </p>
+          <p id="dream">
+            Adobe Dreamweaver -<br /><br />Dreamweaver est un logiciel
+            permettant de faciliter le travail d'un webdesigner dans le
+            processus de création d'un site web.<br />Si Dahisland existe, c'est
+            bien grâce à lui, il m'a permis de vous guider jusqu'à l'île pour
+            vous y faire découvrir ses trésors !
+          </p>
+          <p id="afterfx">
+            Adobe After Effect -<br /><br />Un logiciel de post-production
+            sensationnel !<br />Il permet de créer de la magie dans chaque vidéo
+            ou animation.<br />
+            Du compositing aux effets spéciaux, cet instrument fait des miracles
+            et permet de faire naître l'aventure à Dahisland!
+          </p>
+          <p id="encore">
+            Adobe Indesign -<br /><br />Un outil très utile dans l'univers de
+            l'édition et de la publication.<br />Avec lui, on anime et met en
+            forme... les mots !
+          </p>
+          <p id="maya">
+            Autodesk Maya -<br /><br />
+            L'animation, c'est ce qui fait le charme de l'île.<br />Grâce à
+            Maya, les objets prennent vie, votre environnement tourbillonne et
+            vous vous laissez emporter ...<br />Bien que, à Dahisland, la
+            plupart des animations soient réalisés sur 3DS Max, Maya reste un
+            outil utilisé occasionnellement et la propriétaire de l'île compte
+            bien approfondir son apprentissage pour continuer à rendre le rêve
+            plus parfait !
+          </p>
+          <p id="premiere">
+            Adobe Première Pro -<br /><br />C'est le logiciel de montage de
+            référence pour la post-production sur PC.<br />
+            La vie sur Dahisland se raconte en images et en vidéo, et avec
+            Première, le récit de vos jours passés sur l'île prend tout son
+            sens.<br />En musique, avec transitions, le charme de la narration
+            est conté en images...
+          </p>
+          <p id="giant">
+            HTML et CSS -<br /><br />Des langages pour développer et animer des
+            sites web en pagaille !<br />Le premier des outils indispensables :
+            la connaissance...
+          </p>
+          <p id="toshop">
+            Adobe Photoshop -<br /><br />Le couteau suisse de Dahisland ? C'est
+            bien évidemment Photoshop.<br />Les beaux souvenirs deviennent
+            lumineux, parfaits et tout est possible.<br />Pour survivre à
+            Dahisland, Photoshop est INDISPENSABLE !
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
